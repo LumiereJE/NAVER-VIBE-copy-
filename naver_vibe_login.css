@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  /* width: 100vw;
+    height: 100vh; */
+  margin: 0;
+  background-color: black;
+}
+.wrap {
+  width: 400px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  width: 100%;
+  margin: 120px auto 50px;
+  text-align: center;
+}
+.logo > svg {
+  width: 200px;
+  height: 50px;
+}
+main {
+  width: 100%;
+  height: 200px;
+}
+.input_box {
+  width: 100%;
+  height: 96px;
+  margin: 0 auto;
+}
+.input_box > input {
+  width: 100%;
+  height: 48px;
+
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #999;
+  background-color: #000;
+}
+.id {
+  border-radius: 6px 6px 0 0;
+  color: #999;
+}
+.pw {
+  border-radius: 0 0 6px 6px;
+  color: #999;
+}
+button {
+  width: 100%;
+  height: 48px;
+  background-image: linear-gradient(
+    104deg,
+    #ff0c28 9%,
+    #d901df 51%,
+    #7200ff 98%
+  );
+  border-radius: 6px;
+  border-style: none;
+  margin: 50px auto;
+  color: #fff;
+  font-size: 16px;
+}
+footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  font-size: 14px;
+  color: #999;
+  text-decoration: none;
+  display: inline-block;
+}
+footer > a:hover {
+  text-decoration: underline;
+}
+.bar {
+  width: 1px;
+  height: 16px;
+  background-color: #999;
+  margin: 0 10px;
+}
+@media only screen and (max-width: 410px) {
+  .wrap {
+    width: 90vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+}

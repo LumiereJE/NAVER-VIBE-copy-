@@ -1,0 +1,498 @@
+/* 배너 */
+.banner {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.55);
+  background-image: linear-gradient(67deg, #555 36%, #56433c 51%);
+  display: flex;
+}
+.banner:hover .hover_box {
+  opacity: 1;
+}
+.img_box {
+  width: 370px;
+  height: 258px;
+
+  position: relative;
+}
+.hover_box {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(20, 20, 20, 0) 10%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  opacity: 0;
+  transition: all 0.5s;
+}
+.b_playbtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  background-color: #111;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 10px;
+  bottom: 16px;
+  transition: all 0.3s;
+}
+.b_playbtn:hover {
+  background-color: #ff1150;
+}
+.b_playbtn:hover .play_arrow {
+  transform: scale(1.2);
+}
+
+.play_arrow {
+  width: 20px;
+  height: 20px;
+  background-position: -394px -756px;
+  transition: all 0.3s;
+}
+.b_more_dot {
+  width: 27px;
+  height: 10px;
+  background-position: -520px -428px;
+
+  position: absolute;
+  right: 10px;
+  bottom: 22px;
+}
+.b_img > img {
+  width: 370px;
+  height: 250px;
+}
+.txt_box {
+  width: 55%;
+  padding: 30px 34px;
+}
+.txt_box > img {
+  width: 77px;
+  height: 28px;
+}
+.txt_box > h1 {
+  font-size: 28px;
+  margin: 0;
+}
+.txt_box > p {
+  font-size: 14px;
+  margin: 10px 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+.b_desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+/* 컨테이너 */
+/* hover btn */
+.play_btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  background-color: #111;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  transition: all 0.3s;
+}
+.play_btn:hover {
+  background-color: #ff1150;
+}
+.play_btn:hover .play_arrow {
+  transform: scale(1.2);
+}
+.more_dot {
+  width: 27px;
+  height: 10px;
+  background-position: -520px -430px;
+
+  position: absolute;
+  right: 10px;
+  bottom: 24px;
+}
+/*  */
+.container {
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.con_title {
+  padding-top: 30px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.con_title > p {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0;
+}
+.con_tatle > a {
+  white-space: nowrap;
+}
+.con_dumi {
+  display: flex;
+}
+.con_info {
+  margin-right: 14px;
+}
+.con_img {
+  width: 285px;
+  height: 285px;
+  position: relative;
+}
+.con_info:hover .hover_box {
+  opacity: 1;
+}
+.con_img > img {
+  width: 100%;
+  height: 100%;
+}
+.con_txt p {
+  color: #eee;
+  margin: 10px 0;
+}
+.date {
+  color: #999;
+  margin: 0;
+}
+/* 뉴스 - 설정 */
+.news_con {
+  width: 285px;
+  height: 168px;
+  position: relative;
+}
+/* 반응형 */
+@media only screen and (min-width: 1280px) {
+  .banner {
+    height: 332px;
+  }
+  .img_box {
+    width: 482px;
+    height: 332px;
+  }
+  .b_img > img {
+    width: 482px;
+    height: 332px;
+  }
+  .txt_box > h1 {
+    font-size: 32px;
+  }
+  .txt_box > p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .txt_box {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1279px) {
+  /* 현재 작업 사이즈임 */
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  main {
+    padding: 0 0 50px 220px;
+  }
+  .banner {
+    height: 375px;
+    display: static;
+    position: relative;
+    background-image: none;
+  }
+  .img_box {
+    width: 100%;
+    height: 375px;
+  }
+  .b_img {
+    width: 100%;
+    height: 100%;
+    background-image: url("./vibe/NAVER VIBE(바이브)_files/banner1.jpg");
+    background-size: cover;
+  }
+  .b_img > img {
+    width: 100%;
+    height: 375px;
+    display: none;
+  }
+  .txt_box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .txt_box > p {
+    display: none;
+  }
+  .txt_box {
+    width: 100%;
+  }
+  .b_playbtn {
+    left: auto;
+    right: 60px;
+    bottom: 26px;
+  }
+  .b_more_dot {
+    right: 20px;
+    bottom: 36px;
+  }
+  .container {
+    padding: 0 50px;
+  }
+  .company > span {
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    border-top: 0.1px solid rgba(153, 153, 153, 0.2);
+    padding: 30px 0 10px;
+  }
+  .detail a > span {
+    margin-right: 4px;
+    margin-bottom: 6px;
+  }
+  .corp_box {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 30px;
+  }
+  .corp {
+    font-size: 14px;
+    color: #555;
+  }
+  .sns {
+    display: none;
+  }
+  .under_sns {
+    display: flex;
+    justify-content: center;
+  }
+  .song_info {
+    max-width: 30vw;
+  }
+  .lyrics {
+    display: none;
+  }
+  .r_time {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  main {
+    padding: 0;
+  }
+  header {
+    display: none;
+  }
+  .m_header {
+    width: 100%;
+    height: 70px;
+    display: block;
+    position: relative;
+  }
+  .m_header_L {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .m_header_L > .logo {
+    margin: 0 20px;
+  }
+  .m_app_down {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .m_header_R {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .m_membership {
+    font-size: 13px;
+    font-weight: 900;
+    color: #ff1150;
+  }
+  .m_search {
+    width: 20px;
+    height: 20px;
+    background-position: -200px -606px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .ham_btn {
+    width: 22px;
+    height: 16px;
+    background-position: -389px -134px;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+  .banner {
+    height: 375px;
+    display: static;
+    position: relative;
+    background-image: none;
+    overflow: hidden;
+  }
+  .img_box {
+    width: 100%;
+    height: 375px;
+  }
+  .b_img {
+    width: 100%;
+    height: 100%;
+    background-image: url("./vibe/NAVER VIBE(바이브)_files/banner1.jpg");
+    background-size: cover;
+  }
+  .b_img > img {
+    width: 100%;
+    height: 375px;
+    display: none;
+  }
+  .b_playbtn:hover {
+    background-color: #ff1150;
+  }
+  .txt_box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .txt_box > p {
+    display: none;
+  }
+  .txt_box {
+    width: 100%;
+  }
+  .b_playbtn {
+    left: auto;
+    right: 60px;
+    bottom: 26px;
+  }
+  .b_more_dot {
+    right: 20px;
+    bottom: 36px;
+  }
+  .container {
+    padding: 0 50px;
+  }
+  .con_title > p {
+    max-width: 80%;
+  }
+  .con_title > a {
+    font-size: 15px;
+    color: #999;
+  }
+  footer {
+    padding: 0 50px;
+    padding-bottom: 80px;
+  }
+  .company > span {
+    display: block;
+    margin-bottom: 6px;
+  }
+  .detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    border-top: 0.1px solid rgba(153, 153, 153, 0.2);
+    padding: 10px 0;
+  }
+  .detail a > span {
+    margin-right: 4px;
+    margin-bottom: 6px;
+  }
+  .corp_box {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 30px;
+  }
+  .corp {
+    font-size: 14px;
+    color: #555;
+  }
+  .sns {
+    display: none;
+  }
+  .under_sns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  /* 플레이어 */
+  .player_controller {
+    height: 70px;
+    padding: 12px 10px;
+  }
+  .play_img {
+    display: none;
+  }
+  .song_info {
+    max-width: 30vw;
+  }
+  .song_info :nth-child(1) {
+    font-size: 16px;
+  }
+  .song_info :nth-child(2) {
+    font-size: 16px;
+  }
+  .song_info a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .random,
+  .repeat,
+  .r_time,
+  .vol_ctrl,
+  .lyrics {
+    display: none;
+  }
+}
+@media only screen and (max-width: 469px) {
+  .m_membership {
+    display: none;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .song_info {
+    max-width: 24vw;
+  }
+  .song_info > a {
+    white-space: nowrap;
+  }
+  .m_app_down {
+    display: none;
+  }
+  .like,
+  .ect {
+    display: none;
+  }
+}
