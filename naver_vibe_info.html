@@ -8,24 +8,68 @@
       rel="shortcut icon"
       href="./vibe/NAVER VIBE(바이브)_files/mini_icon.jpg"
     />
+
+    <script defer src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script defer src="./naver_vibe_info.js"></script>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./naver_vibe_info.css" />
-    <link rel="stylesheet" href="./naver_vibe_info.js" />
   </head>
   <body>
     <div class="wrap">
       <header>
         <div class="logo">
           <a href="./index.html">
-            <img src="./vibe/NAVER VIBE(바이브)_files/logo.png" alt="logo" />
+            <img src="./vibe/NAVER VIBE_info/logo.png" alt="logo" />
           </a>
         </div>
         <div class="select">
           <a class="login" href="./naver_vibe_login.html">로그인</a>
-          <a class="start" href="./index.html">VIBE 시작하기</a>
+          <a class="start" href="./index.html"><span>VIBE 시작하기</span></a>
         </div>
       </header>
-      <main></main>
+      <main>
+        <div class="back_video">
+          <video>
+            <source src="./vibe/NAVER VIBE_info/motion_00.mp4" />
+          </video>
+        </div>
+        <section class="bar_container">
+          <div>
+            <div class="bar bar1"></div>
+            <h2 class="word">음악을 넘어,</h2>
+          </div>
+          <div>
+            <div class="bar bar2"></div>
+            <h2 class="word">오디오의<br />즐거움까지</h2>
+          </div>
+          <div>
+            <div class="bar bar3"></div>
+            <h2 class="word">음악 그 이상을 채워보세요.</h2>
+          </div>
+          <div class="install_btn">
+            <a href="#" class="apple">
+              <img
+                src="./vibe/NAVER VIBE_info/img_pc_store_btn-apple.png"
+                alt="apple_off"
+              />
+              <img
+                src="./vibe/NAVER VIBE_info/img_pc_store_btn-apple_on.png"
+                alt="apple_on"
+              />
+            </a>
+            <a href="#" class="micro">
+              <img
+                src="./vibe/NAVER VIBE_info/img_store_btn-ms.png"
+                alt="micro_off"
+              />
+              <img
+                src="./vibe/NAVER VIBE_info/img_store_btn-ms_on.png"
+                alt="micro_on"
+              />
+            </a>
+          </div>
+        </section>
+      </main>
       <footer></footer>
     </div>
   </body>
