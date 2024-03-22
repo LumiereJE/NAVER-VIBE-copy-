@@ -94,6 +94,7 @@ main {
 section {
   width: 100%;
   padding: 50px 80px;
+  margin-bottom: 200px;
 }
 .bar {
   width: 0%;
@@ -182,43 +183,79 @@ section {
   opacity: 1;
 }
 
-/* 플레이리스트 */
+/* 플레이리스트 ------------------------------ */
 .playlist_section {
 }
-.playlist_section > h2 {
-  font-size: 30px;
-  font-weight: 600;
+/* 플레이리스트 - intro */
+.play_intro {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 250px;
+}
+.play_intro p {
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 90px;
+}
+.play_intro p:last-child {
+  margin-top: 180px;
+}
+/* 플레이리스트 - container */
+.play_title_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   margin-bottom: 80px;
 }
-/* bar 자리 */
+.play_title_container > h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.play_btn_box {
+  width: 50px;
+}
+.play_btn_box img {
+  width: 100%;
+  cursor: pointer;
+}
+.btn_on {
+  display: block;
+}
+.btn_off {
+  display: none;
+}
+/* playlist_container */
+.playlist_container {
+  position: relative;
+}
+.bar_background {
+}
+.bar_background .bar {
+  margin-bottom: 300px;
+}
+.bar_background .bar:last-child {
+  margin-bottom: 0;
+}
 
 .playlist_box {
   display: flex;
   align-items: center;
   gap: 120px;
 
-  /* animation-name: playlist_active;
-  animation-duration: 10s;
-  animation-delay: 1s;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  animation-timing-function: linear; */
+  position: absolute;
+  top: 0;
+  left: 0;
 
-  animation: 107.071s linear 1s infinite normal none running
-    marqueeAnimation-2273468;
+  animation: 107.071s linear 1s infinite normal none running animation_active;
 }
 .playlist_box:hover {
   animation-play-state: paused;
 }
-@keyframes playlist_active {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.paused {
+  animation-play-state: paused;
 }
-@keyframes marqueeAnimation-2273468 {
+@keyframes animation_active {
   100% {
     transform: translateX(-7071.56px);
   }
