@@ -1,3 +1,25 @@
+// 백그라운드 동영상 scrollTop
+const video1 = document.querySelector(".back_v1");
+const video2 = document.querySelector(".back_v2");
+const video3 = document.querySelector(".back_v3");
+
+document.addEventListener("scroll", () => {
+  console.log(window.scrollY); // 스크롤 위치 출력
+  if (window.scrollY < 750) {
+    video1.classList.add("back_v_on");
+    video2.classList.remove("back_v_on");
+    video3.classList.remove("back_v_on");
+  } else if (window.scrollY >= 750 && window.scrollY < 2300) {
+    video1.classList.remove("back_v_on");
+    video2.classList.add("back_v_on");
+    video3.classList.remove("back_v_on");
+  } else {
+    video1.classList.remove("back_v_on");
+    video2.classList.remove("back_v_on");
+    video3.classList.add("back_v_on");
+  }
+});
+
 // 소개 페이지 - 1번 section bar width 100%
 function bar_100() {
   const bars = document.querySelectorAll(".bar");

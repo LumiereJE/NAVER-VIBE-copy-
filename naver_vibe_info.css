@@ -90,6 +90,28 @@ main {
 }
 .back_video video {
   width: 100%;
+  transition: all 0.3s;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.back_v1 {
+  z-index: 1;
+}
+.back_v2 {
+  z-index: 2;
+}
+.back_v3 {
+  z-index: 3;
+}
+.back_v1,
+.back_v2,
+.back_v3 {
+  opacity: 0;
+}
+.back_v_on {
+  opacity: 1;
 }
 section {
   width: 100%;
