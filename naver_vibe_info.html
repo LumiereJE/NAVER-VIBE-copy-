@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NAVER VIBE(바이브)</title>
+    <title>서비스 소개 VIBE(바이브)</title>
     <link
       rel="shortcut icon"
       href="./vibe/NAVER VIBE(바이브)_files/mini_icon.jpg"
@@ -29,14 +29,14 @@
       </header>
       <main>
         <div class="back_video">
-          <video autoplay muted loop class="back_v1">
+          <video autoplay muted loop class="back_v1 back_v_on">
             <source src="./vibe/NAVER VIBE_info/motion_00.mp4" />
           </video>
           <video autoplay muted loop class="back_v2">
-            <source src="./vibe/NAVER VIBE_info/motion_03.mp4" />
-          </video>
-          <video autoplay muted loop class="back_v2">
             <source src="./vibe/NAVER VIBE_info/motion_05.mp4" />
+          </video>
+          <video autoplay muted loop class="back_v3">
+            <source src="./vibe/NAVER VIBE_info/motion_03.mp4" />
           </video>
         </div>
         <section class="bar_container">
@@ -77,9 +77,90 @@
         </section>
 
         <section class="playlist_section">
-          <div class="play_intro">
+          <div class="introduce">
             <p>지금</br>들어봐야 할 음악,</p>
             <p>VIBE에서</br>인기있는 음악을</br>지금 들어보세요.</p>
+          </div>
+          <div class="function" id="mockup_fixed_part">
+            <div class="func_box" id="setMockup_1">
+              <div class="L_title">
+                <h2>Music AI</h2>
+                <p>들을수록 취향저격, 놀라운 추천선곡</br>VIBE의 Music AI를 만나보세요.</p>
+              </div>
+              <div class="R_dumi">
+                <div>
+                  <div id="dumi_1_1" class="dumi_item" data-index="0">
+                    <h6 class="dumi_h6 active">믹스테잎</h6>
+                    <p class="dumi_p active">매일매일 나를 위한 맞춤 플레이리스트가</br>업데이트됩니다.</p>
+                  </div>
+                  <div id="dumi_1_2" class="dumi_item" data-index="1">
+                    <h6 class="dumi_h6">자동 추천 재생</h6>
+                    <p class="dumi_p">듣던 곡의 장르나 무드 그대로 자동 선곡하여</br>끊임없이 재생합니다.</p>
+                  </div>
+                  <div id="dumi_1_3" class="dumi_item" data-index="2">
+                    <h6 class="dumi_h6">비슷한 노래보기</h6>
+                    <p class="dumi_p">지금 듣는 노래와 함께 들으면 좋을 만한</br>노래들을 찾아줍니다.</p>
+                  </div>
+                </div>
+                <div class="img_box">
+                  <img id="center_image_1_1" class="scroll_mockup" src="./vibe/NAVER VIBE_info/img_func_ai_01.png" alt="mockup_1_1">
+                  <img id="center_image_1_2" class="scroll_mockup" src="./vibe/NAVER VIBE_info/img_func_ai_02.png" alt="mockup_1_2">
+                  <img id="center_image_1_3" class="scroll_mockup" src="./vibe/NAVER VIBE_info/img_func_ai_03.png" alt="mockup_1_3">
+                </div>
+              </div>
+            </div>
+            <div class="func_box" id="setMockup_2">
+              <div class="L_title">
+                <h2>VIBE Player</h2>
+                <p>플레이어 하나에 이렇게 많은 즐거움이!</p>
+              </div>
+              <div class="R_dumi">
+                <div>
+                  <div id="dumi_2_1" class="dumi_item" data-index="3">
+                    <h6 class="dumi_h6 active">편리한 재생목록</h6>
+                    <p class="dumi_p active">내 플레이리스트는 따로 들을 수 있고, 선택한 곡만</br>반복할 수 있어요.</p>
+                  </div>
+                  <div id="dumi_2_2" class="dumi_item" data-index="4">
+                    <h6 class="dumi_h6">싱크가사</h6>
+                    <p class="dumi_p">한 줄 한 줄 노래에 맞춰 나오는 가사, 원하는 가사를</br>탭해서 바로 이동할수도 있어요.</p>
+                  </div>
+                  <div id="dumi_2_3" class="dumi_item" data-index="5">
+                    <h6 class="dumi_h6">파티룸</h6>
+                    <p class="dumi_p">최신 음악부터 내 플레이리스트까지, 친구들과</br>함께하고 싶은 음악이 있다면 지금 DJ가 되어보세요.</p>
+                  </div>
+                  <div id="dumi_2_4" class="dumi_item" data-index="6">
+                    <h6 class="dumi_h6">노래방</h6>
+                    <p class="dumi_p">플레이어 탭 한번이면, 이곳이 어디든 노래방으로</br>변신할 수 있어요.</p>
+                  </div>
+                </div>
+                <div class="img_box">
+                  <img id="center_image_2_1" class="scroll_mockup" src="./vibe/NAVER VIBE_info/img_func_player_01.png" alt="mockup_2_1">
+                  <img id="center_image_2_2" class="scroll_mockup" src="./vibe/NAVER VIBE_info/img_func_player_02.png" alt="mockup_2_2">
+                  <img id="center_image_2_3" class="scroll_mockup" src="./vibe/NAVER VIBE_info/img_func_player_03.png" alt="mockup_2_3">
+                  <img id="center_image_2_4" class="scroll_mockup" src="./vibe/NAVER VIBE_info/img_func_player_04.png" alt="mockup_2_4">
+                </div>
+              </div>
+            </div>
+            <div class="func_box" id="setMockup_3">
+              <div class="L_title">
+                <h2>VIBE Exclusive</h2>
+                <p>VIBE에서만 즐길 수 있는 독점 컨텐츠를</br>만나보실 수 있습니다.</p>
+              </div>
+              <div class="R_dumi">
+                <div>
+                  <div id="dumi_3_1" class="dumi_item" data-index="7">
+                    <h6 class="dumi_h6 active">Billboard</h6>
+                    <p class="dumi_p active">국내 독점 빌보드 차트 제공. 전 세계에서 가장 핫한 음악을 즐기세요</p>
+                  </div>
+                </div>
+                <div class="img_box">
+                  <img id="center_image_3_1" class="scroll_mockup" src="./vibe/NAVER VIBE_info/img_func_exc_02.png" alt="mockup_3_1">
+                </div>
+              </div>
+            </div>
+            <!-- <div class="center_mockup">
+              <img src="./vibe/NAVER VIBE_info/" alt="">
+            </div> -->
           </div>
           <div class="play_title_container">
             <h2>VIBE 추천 플레이리스트</h2>
