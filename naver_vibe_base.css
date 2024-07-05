@@ -72,12 +72,12 @@ ul {
 .icon {
   width: 20px;
   height: 20px;
-  background-image: url("https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20240307112516_resources/img/sp_topbar.abb84804.svg");
+  background-image: url("https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20240620112711_resources/img/sp_topbar.abb84804.svg");
 }
 .icon2 {
   width: 17px;
   height: 14px;
-  background-image: url("https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20240307112516_resources/img/sp_vibe.bf655ef6.svg");
+  background-image: url("https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20240620112711_resources/img/sp_vibe.bf655ef6.svg");
 }
 .logo {
   position: fixed;
@@ -85,12 +85,6 @@ ul {
   border-bottom: 1px solid rgba(153, 153, 153, 0.2);
 }
 .logo > div {
-  /* width: 114px;
-    height: 20px;
-    background-image: url('./vibe/NAVER\ VIBE\(바이브\)_files/logo.png');
-    background-repeat: no-repeat;
-    padding: 20px; */
-  /* padding: 10px 0; */
   width: 190px;
   margin: 27px 10px 20px 14px;
 }
@@ -107,7 +101,7 @@ ul {
   height: 30px;
   margin: 0 10px;
   border-radius: 30px;
-  background-image: url("https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20240307112516_resources/img/sp_topbar.abb84804.svg");
+  background-image: url("https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20240620112711_resources/img/sp_topbar.abb84804.svg");
   background-position: -627px -104px;
 }
 .membership span {
@@ -139,7 +133,7 @@ ul {
 .membership_btn_w {
   width: 100px;
   height: 16px;
-  background-image: url("https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20240307112516_resources/img/sp_topbar.abb84804.svg");
+  background-image: url("https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20240620112711_resources/img/sp_topbar.abb84804.svg");
   background-position: -426px -68px;
 }
 .search_box {
