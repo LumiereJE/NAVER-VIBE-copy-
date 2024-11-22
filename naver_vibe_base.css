@@ -72,7 +72,7 @@ ul {
 .icon {
   width: 20px;
   height: 20px;
-  background-image: url("https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20240620112711_resources/img/sp_topbar.abb84804.svg");
+  background-image: url("https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20241114113123_resources/img/sp_topbar.abb84804.svg");
 }
 .icon2 {
   width: 17px;
@@ -86,7 +86,7 @@ ul {
 }
 .logo > div {
   width: 190px;
-  margin: 27px 10px 20px 14px;
+  margin: 27px 10px 20px 0px;
 }
 
 .membership > div {
@@ -101,7 +101,7 @@ ul {
   height: 30px;
   margin: 0 10px;
   border-radius: 30px;
-  background-image: url("https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20240620112711_resources/img/sp_topbar.abb84804.svg");
+  background-image: url("https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20241114113123_resources/img/sp_topbar.abb84804.svg");
   background-position: -627px -104px;
 }
 .membership span {
@@ -133,7 +133,7 @@ ul {
 .membership_btn_w {
   width: 100px;
   height: 16px;
-  background-image: url("https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20240620112711_resources/img/sp_topbar.abb84804.svg");
+  background-image: url("https://cdn-vibe.pstatic.net/v1/vibe/vibeweb/20241114113123_resources/img/sp_topbar.abb84804.svg");
   background-position: -426px -68px;
 }
 .search_box {
