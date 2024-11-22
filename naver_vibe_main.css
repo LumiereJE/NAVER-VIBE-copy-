@@ -52,13 +52,13 @@
 .play_arrow {
   width: 20px;
   height: 20px;
-  background-position: -394px -756px;
+  background-position: -730px -728px;
   transition: all 0.3s;
 }
 .b_more_dot {
   width: 27px;
   height: 10px;
-  background-position: -520px -428px;
+  background-position: -521px -431px;
 
   position: absolute;
   right: 10px;
